@@ -10,7 +10,7 @@ import type {
 } from "../types";
 
 const VALID_FONT_EXTENSIONS = [".ttf", ".otf", ".woff", ".woff2", ".eot"];
-const MAX_FONT_SIZE_BYTES = 10 * 1024 * 1024;
+const MAX_FONT_SIZE_BYTES = 100 * 1024 * 1024;
 
 export type PreparedSlideEditorImport = FontUploadPreviewResponse;
 

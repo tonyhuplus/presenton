@@ -204,8 +204,8 @@ export const useTemplateCreation = () => {
             return null;
         }
 
-        // Validate file size (10MB limit)
-        const maxSize = 10 * 1024 * 1024;
+        // Validate file size (100MB limit)
+        const maxSize = 100 * 1024 * 1024;
         if (file.size > maxSize) {
             notify.error("File too large", "Font file size must be less than 10MB.");
             return null;

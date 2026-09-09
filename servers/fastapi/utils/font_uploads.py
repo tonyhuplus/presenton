@@ -31,8 +31,8 @@ ALLOWED_FONT_EXTENSIONS = {
     ".woff2",
 }
 
-# Keep in sync with the slide-editor client upload guard (10 MB).
-MAX_FONT_UPLOAD_BYTES = 10 * 1024 * 1024
+# Keep in sync with the slide-editor client upload guard (100 MB).
+MAX_FONT_UPLOAD_BYTES = 100 * 1024 * 1024
 
 FONT_CONTENT_TYPES = {
     ".eot": "application/vnd.ms-fontobject",
