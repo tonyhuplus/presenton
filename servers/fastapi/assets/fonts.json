@@ -378,6 +378,58 @@
     {
         "font_name": "Zilla Slab",
         "font_url": "/vendor/fonts/slab_serif/zillaslab/ZillaSlab-Regular.ttf"
+    },
+    {
+        "font_name": "Source Han Sans SC",
+        "font_url": "/vendor/fonts/UOS/SourceHanSansSC/SourceHanSansSC-Regular.otf"
+    },
+    {
+        "font_name": "Source Han Serif SC",
+        "font_url": "/vendor/fonts/UOS/SourceHanSerifSC/SourceHanSerifSC-Regular.otf"
+    },
+    {
+        "font_name": "Arial",
+        "font_url": "/vendor/fonts/windows/arial/Arial-Regular.ttf"
+    },
+    {
+        "font_name": "Calibri",
+        "font_url": "/vendor/fonts/windows/calibri/Calibri-Regular.ttf"
+    },
+    {
+        "font_name": "Consolas",
+        "font_url": "/vendor/fonts/windows/consola/Consolas-Regular.ttf"
+    },
+    {
+        "font_name": "Georgia",
+        "font_url": "/vendor/fonts/windows/georgia/Georgia-Regular.ttf"
+    },
+    {
+        "font_name": "Microsoft YaHei",
+        "font_url": "/vendor/fonts/windows/msyh/msyh-Regular.ttf"
+    },
+    {
+        "font_name": "Times New Roman",
+        "font_url": "/vendor/fonts/windows/times/TimesNewRoman-Regular.ttf"
+    },
+    {
+        "font_name": "FangSong",
+        "font_url": "/vendor/fonts/windows/zh_cn/simfang.ttf"
+    },
+    {
+        "font_name": "SimHei",
+        "font_url": "/vendor/fonts/windows/zh_cn/simhei.ttf"
+    },
+    {
+        "font_name": "KaiTi",
+        "font_url": "/vendor/fonts/windows/zh_cn/simkai.ttf"
+    },
+    {
+        "font_name": "NSimSun",
+        "font_url": "/vendor/fonts/windows/zh_cn/simsun-new.ttf"
+    },
+    {
+        "font_name": "SimSun",
+        "font_url": "/vendor/fonts/windows/zh_cn/simsun.ttf"
     }
 ]
 

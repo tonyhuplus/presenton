@@ -1946,7 +1946,7 @@ async def stream_smart_presentation(
             source_context = source_context[:90_000]
 
         presentation.fonts = presentation.fonts or reference_fonts or {
-            "Inter": "/vendor/fonts/sans_serif/inter/Inter[opsz,wght].ttf"
+            "Microsoft YaHei": "/vendor/fonts/windows/msyh/msyh-Regular.ttf"
         }
         # Release the request session's read transaction before independent
         # checkpoint sessions begin writing (important for SQLite), while also

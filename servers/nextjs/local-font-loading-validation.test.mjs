@@ -51,21 +51,30 @@ test("the local font catalog points to checked-in vendor assets", async () => {
   );
   const source = await readFile(catalogPath, "utf8");
   const entries = source.match(/^\s+(?:font|staticFont)\("/gm) ?? [];
-  assert.equal(entries.length, 95);
+  assert.equal(entries.length, 14);
   assert.doesNotMatch(source, /fonts\.googleapis|fonts\.gstatic/i);
 
   const fontFiles = await listFiles(
     path.join(projectDirectory, "public/vendor/fonts"),
   );
-  assert.equal(fontFiles.length, 320);
+  assert.equal(fontFiles.length, 352);
 
   await Promise.all(
     [
-      "sans_serif/manrope/Manrope[wght].ttf",
-      "sans_serif/syne/Syne[wght].ttf",
-      "sans_serif/montserrat/Montserrat[wght].ttf",
-      "serif/playfairdisplay/PlayfairDisplay[wght].ttf",
-      "display/unbounded/Unbounded[wght].ttf",
+      "sans_serif/inter/Inter[opsz,wght].ttf",
+      "UOS/SourceHanSansSC/SourceHanSansSC-Regular.otf",
+      "UOS/SourceHanSerifSC/SourceHanSerifSC-Regular.otf",
+      "windows/arial/Arial-Regular.ttf",
+      "windows/calibri/Calibri-Regular.ttf",
+      "windows/consola/Consolas-Regular.ttf",
+      "windows/georgia/Georgia-Regular.ttf",
+      "windows/msyh/msyh-Regular.ttf",
+      "windows/times/TimesNewRoman-Regular.ttf",
+      "windows/zh_cn/simfang.ttf",
+      "windows/zh_cn/simhei.ttf",
+      "windows/zh_cn/simkai.ttf",
+      "windows/zh_cn/simsun-new.ttf",
+      "windows/zh_cn/simsun.ttf",
     ].map((asset) =>
       access(path.join(projectDirectory, "public/vendor/fonts", asset)),
     ),

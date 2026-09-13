@@ -582,7 +582,14 @@ class _FakeGoogleFontsSession:
 
 
 def test_packaged_font_availability_rejects_unknown_fonts():
-    assert asyncio.run(pptx_font_utils.check_google_font_availability("Calibri")) is False
+    assert (
+        asyncio.run(
+            pptx_font_utils.check_google_font_availability(
+                "Definitely Not A Packaged Font"
+            )
+        )
+        is False
+    )
 
 
 def test_packaged_font_availability_accepts_catalog_fonts():
