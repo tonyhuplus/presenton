@@ -68,7 +68,16 @@ function fontWeightFromFileName(fileName: string) {
 }
 
 export const LOCAL_FONT_OPTIONS: LocalFontOption[] = [
-  font("Inter", "sans_serif", "inter", "Inter[opsz,wght].ttf", "Inter-Italic[opsz,wght].ttf"),
+  staticFont("Microsoft YaHei", "windows", "msyh", [
+    "msyh-Regular.ttf",
+    "msyh-Light.ttf",
+    "msyh-Bold.ttf",
+  ]),
+  staticFont("FangSong", "windows", "zh_cn", ["simfang.ttf"]),
+  staticFont("SimHei", "windows", "zh_cn", ["simhei.ttf"]),
+  staticFont("KaiTi", "windows", "zh_cn", ["simkai.ttf"]),
+  staticFont("NSimSun", "windows", "zh_cn", ["simsun-new.ttf"]),
+  staticFont("SimSun", "windows", "zh_cn", ["simsun.ttf"]),
   staticFont("Source Han Sans SC", "UOS", "SourceHanSansSC", [
     "SourceHanSansSC-Regular.otf",
     "SourceHanSansSC-Medium.otf",
@@ -77,7 +86,6 @@ export const LOCAL_FONT_OPTIONS: LocalFontOption[] = [
     "SourceHanSerifSC-Regular.otf",
     "SourceHanSerifSC-Medium.otf",
   ]),
-
   staticFont("Arial", "windows", "arial", [
     "Arial-Regular.ttf",
     "Arial-Italic.ttf",
@@ -104,22 +112,13 @@ export const LOCAL_FONT_OPTIONS: LocalFontOption[] = [
     "Georgia-Bold.ttf",
     "Georgia-BoldItalic.ttf",
   ]),
-  staticFont("Microsoft YaHei", "windows", "msyh", [
-    "msyh-Regular.ttf",
-    "msyh-Light.ttf",
-    "msyh-Bold.ttf",
-  ]),
   staticFont("Times New Roman", "windows", "times", [
     "TimesNewRoman-Regular.ttf",
     "TimesNewRoman-Italic.ttf",
     "TimesNewRoman-Bold.ttf",
     "TimesNewRoman-BoldItalic.ttf",
   ]),
-  staticFont("FangSong", "windows", "zh_cn", ["simfang.ttf"]),
-  staticFont("SimHei", "windows", "zh_cn", ["simhei.ttf"]),
-  staticFont("KaiTi", "windows", "zh_cn", ["simkai.ttf"]),
-  staticFont("NSimSun", "windows", "zh_cn", ["simsun-new.ttf"]),
-  staticFont("SimSun", "windows", "zh_cn", ["simsun.ttf"]),
+  font("Inter", "sans_serif", "inter", "Inter[opsz,wght].ttf", "Inter-Italic[opsz,wght].ttf"),
 ];
 
 const SYSTEM_FONT_FAMILY_KEYS = new Set(
